@@ -25,9 +25,23 @@ export default function App() {
             style={{height:300, width:300}}
             source={require('./assets/sol.png')} >
             <TouchableOpacity
-              style={{marginLeft:65,marginTop:65,width:170,height:170,borderRadius:100, backgroundColor:'#ffae30', justifyContent:'center', alignItems:"center"}}
-            onPress={gerarFrase}>
-            <Text style={{textAlign:"center",width:150, fontSize:20}}>{frase?.advice}</Text>
+              style={{
+                    marginLeft:65,
+                    marginTop:65,
+                    width:170,
+                    height:170,
+                    borderRadius:100, 
+                    backgroundColor:'#ffae30', 
+                    justifyContent:'center', 
+                    alignItems:"center"}}
+              onPress={gerarFrase}>
+              <Text 
+                style={{
+                       textAlign:"center",
+                       width:150, 
+                       fontSize:20}}>
+                 {frase?.advice}
+               </Text>
           </TouchableOpacity>
       </ImageBackground>
     </View>
